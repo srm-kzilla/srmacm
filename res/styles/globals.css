@@ -1,21 +1,37 @@
 @font-face {
-    font-family: "Acumin";
-    src: url("fonts/Acumin-BdPro.otf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  @font-face {
-    font-family: "OpenSans";
-    src: url("fonts/OpenSans-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
-  }
-  body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  :root {
-    --primary-color: #1C779C;
-    --secondary-color: #f7f5f5;
-  }
+  font-family: "Acumin";
+  src: url("fonts/Acumin-BdPro.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #1C779C;
+  --secondary-color: #f7f5f5;
+}
+
+/* ================= */
+/*      GLOBALS      */
+/* ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Acumin", sans-serif;
+  text-rendering: optimizeLegibility;
+}
