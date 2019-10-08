@@ -2,7 +2,7 @@
 
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/srm-kzilla/SRMKZILLA-v-2.0/master/assets/img/kzilla-black.png" width="100" />
-  <img alt="Logo" src="https://raw.githubusercontent.com/srm-kzilla/SRMKZILLA-v-2.0/master/assets/img/kzilla-black.png" width="100" />
+  <img alt="Logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Association_for_Computing_Machinery_%28ACM%29_logo.svg/300px-Association_for_Computing_Machinery_%28ACM%29_logo.svg.png" width="100" />
 </div>
 <h1 align="center">
 SRM Association for Computing Machinery
