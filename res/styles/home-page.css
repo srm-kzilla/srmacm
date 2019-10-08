@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "Acumin";
+    src: url("../../fonts/Acumin-BdPro.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("../../fonts/OpenSans-Regular.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #1C779C;
+    --secondary-color: #f7f5f5;
+}
+
+.background {
+    width: 100%;
+    height: 80%;
+}
+
+.kz-hero-illustration {
+    position: absolute;
+    right: 100px;
+    top: 180px;
+    height: 480px;
+}
+
+.kz-hero-title {
+    position: absolute;
+    top: 280px;
+    left: 250px;
+    font-family: "Acumin";
+    font-size: 70px;
+    color: #fff;
+}
+
+.kz-hero-description {
+    position: absolute;
+    top: 360px;
+    left: 250px;
+    font-family: "OpenSans";
+    font-size: 20px;
+    color: #fff;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+}
+
+.kz-links {
+    margin-left: 800px;
+}
+
+.kz-nav-item {
+    margin-right: 40px;
+    font-family: "Acumin";
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.kz-nav-item::before {
+    transition: all 0.2s;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 0;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.kz-nav-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 40%;
+    background-color: #274afd;
+    z-index: 1;
+}
+
+.kz-nav-item-active::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 40%;
+    background-color: #274afd;
+    z-index: 1;
+}
