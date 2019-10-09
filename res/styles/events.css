@@ -1,0 +1,135 @@
+.kz-hero-img{
+    max-width: 60%;
+}
+
+.kz-events-hero{
+    height: 100vh;
+}
+
+.kz-events-hero .container{
+    padding-left: 100px;
+}
+
+.kz-h2{
+    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.kz-h3{
+    font-size: 40px;
+    color: var(--primary-color);
+    font-weight: 999;
+}
+
+.kz-space{
+    top: 150px;
+    left: 0;
+    border-bottom-style: solid;
+    border-width: 8px;
+    border-bottom-color: var(--secondary-color);
+    width: 40px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.kz-p{
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    text-align: justify;
+}
+
+@media (max-width: 992px){
+    .kz-events-hero .container{
+        padding-left: 10px;
+    }
+
+    .kz-p{
+        padding-bottom: 30px;
+        font-size: 15px;
+    }
+
+    .kz-h2{
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .kz-h3{
+        font-size: 30px;
+    }
+
+    .kz-space{
+        margin-top: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 564px){
+    .kz-events-hero .container{
+        padding-left: 10px;
+    }
+    .kz-hero-img{
+        width: 50%;
+    }
+}
+
+
+
+
+
+
+/* Navbar here*/
+
+
+
+
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+}
+
+.kz-links {
+    margin-left: 800px;
+}
+
+.kz-nav-item {
+    margin-right: 40px;
+    font-family: "Acumin";
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.kz-nav-item::before {
+    transition: all 0.5s;
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 0;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.kz-nav-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 30px;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.kz-nav-item-active::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 70%;
+    width: 30px;
+    background-color: #274afd;
+    z-index: -1;
+}
