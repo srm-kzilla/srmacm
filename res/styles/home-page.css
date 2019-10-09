@@ -104,3 +104,36 @@ body {
     background-color: #274afd;
     z-index: 1;
 }
+
+/*WHAT WE DO*/
+
+h2{
+    font-family: "Acumin";
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 24px;
+	letter-spacing: 0.5px;
+    font-weight: 300;
+    margin-top: 50px;
+}
+/*.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}*/
+.kz-section-container {
+    margin: 100px;
+    margin-left: 100px;
+    padding-block-start: 50px;   
+}
+
+.kz-section-text{
+    font-family: "OpenSans";
+    font-size: 20px;
+}
+
+.container{
+    margin-bottom: 70px;
+}
