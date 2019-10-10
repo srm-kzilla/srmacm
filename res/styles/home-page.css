@@ -31,7 +31,7 @@ body {
 .kz-hero-illustration {
     position: absolute;
     right: 100px;
-    top: 180px;
+    top: 140px;
     height: 480px;
 }
 
@@ -72,12 +72,12 @@ body {
 }
 
 .kz-nav-item::before {
-    transition: all 0.2s;
+    transition: all 0.5s;
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
+    top: 35px;
+    left: 5px;
+    height: 10%;
     width: 0;
     background-color: #274afd;
     z-index: -1;
@@ -86,21 +86,96 @@ body {
 .kz-nav-item:hover::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
-    width: 40%;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
     background-color: #274afd;
-    z-index: 1;
+    z-index: -1;
 }
 
 .kz-nav-item-active::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
-    width: 40%;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
     background-color: #274afd;
-    z-index: 1;
+    z-index: -1;
+}
+.kz-about-us {
+    margin: 180px 0px;
+}
+
+.kz-about-us-title {
+    font-family: "Acumin";
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.kz-about-us-description {
+    font-family: "OpenSans";
+    margin-top: 100px;
+}
+
+.kz-learn-more {
+    font-family: "Acumin";
+    border: none;
+    background-color: #274afd;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* span {
+    color: #274afd;
+    margin-left: 10px;
+    font-size: 60px;
+    font-family: "Acumin";
+} */
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #274afd;
+    border-radius: 0.6em;
+    color: #274afd;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1em 2.2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+.first {
+    border-color: #274afd;
+    color: #274afd;
+    background-image: linear-gradient(45deg, #274afd 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+.first:hover {
+    background-position: 0;
+}
+.kz-about-us-img {
+    margin-left: 50px;
+    height: 400px;
+    width: auto;
 }

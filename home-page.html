@@ -8,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="res/styles/home.css">
+    <link rel="stylesheet" href="css3-animate-it-master/css/animations.css">
+    <link rel="stylesheet" href="res/styles/home-page.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light kz-navbar">
         <a class="navbar-brand" href="#"><img class="nav-logo" src="res/img/acm-icon.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,17 +41,34 @@
             </ul>
         </div>
     </nav>
-    <section class="kz-hero">
-        <div class="kz-background">
+    <section class="kz-hero animatedParent">
+        <div class="kz-background animated fadeInLeftShort">
             <img class="background" src="res/img/bg.png">
             <img class="kz-hero-illustration" src="res/img/hero-illustration.png">
         </div>
-        <div class="kz-hero">
-            <h1 class="kz-hero-title">SRM ACM</h1>
+        <div class="kz-hero animatedParent">
+            <h1 class="kz-hero-title animated fadeInLeftShort">SRM ACM</h1>
             <p class="kz-hero-description">Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Excepturi magni
                 incidunt,<br>quidem iusto repudiandae quaerat.</p>
         </div>
     </section>
+    <section class="kz-about-us animatedParent">
+        <h1 class="kz-about-us-title animated fadeInUpShort">About us</h1>
+        <div class="container animatedParent">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="kz-about-us-description animated fadeInLeftShort">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique quo minus facere accusantium, explicabo, odio ratione beatae placeat provident nostrum
+                        vero consequuntur magni labore voluptates.</p>
+                    <button class="btn first kz-learn-more animated fadeInLeftShort">Learn More</button>
+                </div>
+                <div class="col-md-8 animatedParent">
+                    <img class="kz-about-us-img animated fadeInRightShort" src="res/img/team.jpg" alt="team photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="css3-animate-it-master/js/css3-animate-it.js"></script>
 </body>
 
 </html>
