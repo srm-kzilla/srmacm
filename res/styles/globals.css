@@ -31,6 +31,7 @@ html, body{
 }
 
 body {
+  /* position: relative; */
   font-size: 16px;
   font-family: "Acumin", sans-serif;
   text-rendering: optimizeLegibility;
