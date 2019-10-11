@@ -15,7 +15,6 @@
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 :root {
@@ -53,11 +52,7 @@ body {
     color: #fff;
 }
 
-.nav-logo {
-    height: 50px;
-    width: auto;
-    margin-left: 50px;
-}
+/* Navbar here*/
 
 .kz-links {
     margin-left: 800px;
@@ -104,6 +99,23 @@ body {
     background-color: #274afd;
     z-index: -1;
 }
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .kz-links {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+  }
+/* Navbar End */
+
+/*About us section*/
+
 .kz-about-us {
     margin-top: 100px;
     margin-left: 0 !important;
@@ -133,13 +145,33 @@ body {
     cursor: pointer;
 }
 
+.kz-about-us-img {
+    margin-left: 50px;
+    height: 300px;
+    width: auto;
+    z-index: 1;
+    
+}
+@media screen and (max-width: 800px) {
+    .kz-about-us {
+        margin-top: 500px;
+    }
+    .kz-about-us-title {
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    .kz-about-us-description {
+        margin: 0px 30px 0px 30px;
+    }
+    .kz-learn-more {
+        margin-left: 30px !important;
+    }
+    .kz-about-us-img {
+        height: 170px;
+        margin-left: 0px;
+    }
+  }
 
-/* span {
-    color: #274afd;
-    margin-left: 10px;
-    font-size: 60px;
-    font-family: "Acumin";
-} */
 .btn {
     box-sizing: border-box;
     appearance: none;
@@ -177,13 +209,8 @@ body {
 .first:hover {
     background-position: 0;
 }
-.kz-about-us-img {
-    margin-left: 50px;
-    height: 400px;
-    width: auto;
-    z-index: 1;
-    
-}
+
+/* About us ends here*/
 
 /*WHAT WE DO*/
 .kz-whatwedo-head{
@@ -201,21 +228,15 @@ body {
 	letter-spacing: 0.5px;
     font-weight: 300;
     margin-top: 50px;
+    text-align: left;
 }
-/*.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}*/
 .kz-section-container {
     padding-block-start: 50px;  
     position: relative; 
  
 }
 
-.kz-section-text{
+.kz-section-text {
     font-family: "OpenSans";
     font-size: 18px;
     color: #fff;
@@ -223,9 +244,6 @@ body {
     padding-right: 200px;
 }
 
-.container{
-    margin-bottom: 70px;
-}
 .kz-section-bg {
     width: 100%;
 }
@@ -238,6 +256,29 @@ body {
     width: 100%;
     margin-bottom: 100px !important;
 }
+
+@media screen and (max-width: 800px) {
+    .kz-whatwedo-head {
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    
+    .kz-section-text {
+        padding: 0px 30px 0px 20px;
+        font-size: 1rem;
+    }
+    .bg-pattern {
+        height: 1000px;
+        width: 1000px;
+        margin-right: 500px;
+    }
+    
+  }
+
+  /*what we do ends*/
+
+  /*SIG Chapters*/
+
 .kz-chapters-logo {
     height: 50px;
 }
@@ -245,3 +286,152 @@ body {
 .kz-chapter-description {
     text-align: left;
 }
+
+@media screen and (max-width: 800px) {
+    .kz-chapters-logo {
+        margin-left: 20px;
+    }
+    .kz-section-head {
+        margin-left: 30px;
+    }
+    .kz-chapter-description {
+        margin: 0px 30px 80px 30px;
+
+    }
+  }
+ /*SIG Chapters ends here*/
+
+ /** FOOTER **/
+
+.kz-footer {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    margin-top: 200px;
+    background-color: #274afd;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.kz-footer-parent {
+    width: 100%;
+}
+
+.kz-footer-left-upper,
+.kz-footer-right-upper {
+    position: relative;
+    padding: 20px;
+    color: #fafafa;
+}
+
+.kz-footer-left-upper h4 {
+    font-family: "Montserrat",sans-serif;
+    font-size: 40px;
+}
+.kz-footer-left-upper,
+.kz-footer-left-social {
+    margin-left: 80px;
+}
+
+.kz-footer-left-upper img {
+    height: 100px;
+    width: 100px;
+    margin: 20px 0px;
+}
+
+.kz-footer-left-social ul {
+    padding: 20px;
+    list-style: none;
+    display: flex;
+}
+
+.kz-footer-left-social li {
+    margin-right: 20px;
+    justify-content: space-evenly;
+    font-family: "OpenSans";
+    font-weight: 1;
+}
+
+.kz-footer-left-social i {
+    font-size: 32px;
+    color: #fafafa;
+}
+
+.kz-footer-left-social i:hover {
+    font-size: 34px;
+    transform: rotate(30deg);
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
+
+.kz-footer-right-upper h4 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    
+}
+
+.kz-footer-right-upper ul {
+    list-style: none;
+    padding: 20px 0px;
+}
+
+.kz-footer-right-upper i {
+    color: #fafafa;
+    font-size: 18px;
+    padding: 10px 0px;
+}
+
+.kz-footer-right-upper i:hover,
+.kz-footer-right-upper span:hover {
+    color: #000;
+    font-weight: 800;
+}
+
+.kz-footer-right-upper span {
+    padding-left: 5px;
+    font-weight: 400;
+    font-family: 'OpenSans' !important;
+}
+
+.kz-footer-right-lower {
+    padding: 20px;
+    color: #fafafa;
+}
+
+.kz-footer-right-lower h3 {
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.kz-footer-right-lower ul {
+    list-style: none;
+    padding: 0px;
+    justify-content: flex-start;
+    display: flex;
+}
+
+.kz-footer-right-lower li {
+    padding-right: 10px;
+    color: #fafafa;
+    font-family: "OpenSans";
+}
+
+.kz-footer-right-lower a {
+    color: #fafafa;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.kz-footer-right-lower a:hover {
+    outline: none;
+    border-bottom: 2px dashed #fafafa;
+}
+
+
+/** FOOTER ENDS **/
