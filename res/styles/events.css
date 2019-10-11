@@ -1,9 +1,10 @@
+/* Hero Title */
+
+
+
+
 .kz-hero-img{
     max-width: 60%;
-}
-
-.kz-events-hero{
-    height: 100vh;
 }
 
 .kz-events-hero .container{
@@ -44,8 +45,9 @@
     }
 
     .kz-p{
-        padding-bottom: 30px;
+        padding-bottom: 0px;
         font-size: 15px;
+        margin-bottom: 0px;
     }
 
     .kz-h2{
@@ -60,6 +62,9 @@
         margin-top: 10px;
         margin-bottom: 25px;
     }
+    .kz-hero-img{
+        height: 350px;
+    }
 }
 
 @media (max-width: 992px) and (min-width: 564px){
@@ -67,13 +72,24 @@
         padding-left: 10px;
     }
     .kz-hero-img{
-        width: 50%;
+        height: 400px;
+    }
+}
+
+@media (max-width: 450px){
+    .kz-col-des{
+        padding: 0;
+    }
+    .kz-hero-img{
+        width: 100%;
+        height: auto;
     }
 }
 
 
 
 
+/* Hero Title ends here */
 
 
 /* Navbar here*/
@@ -81,16 +97,6 @@
 
 
 
-
-.nav-logo {
-    height: 50px;
-    width: auto;
-    margin-left: 50px;
-}
-
-.kz-links {
-    margin-left: 800px;
-}
 
 .kz-nav-item {
     margin-right: 40px;
@@ -104,9 +110,9 @@
     transition: all 0.5s;
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
+    top: 35px;
+    left: 5px;
+    height: 10%;
     width: 0;
     background-color: #274afd;
     z-index: -1;
@@ -115,10 +121,10 @@
 .kz-nav-item:hover::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
-    width: 30px;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
     background-color: #274afd;
     z-index: -1;
 }
@@ -126,15 +132,83 @@
 .kz-nav-item-active::before {
     content: '';
     position: absolute;
-    top: 5px;
-    left: 0;
-    height: 70%;
-    width: 30px;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
     background-color: #274afd;
     z-index: -1;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
 }
 
 
 
 
 /* Navbar End */
+
+
+/* Event Cards */
+
+
+
+
+.kz-card-img{
+    width:100%;
+    height: 300px;
+    transition-duration: 0.4s;
+}
+
+.kz-card-des{
+    padding: 0;
+    transition-duration: 0.4s;
+}
+
+.kz-card-des:hover{
+    box-shadow: 0px 0px 9px 10px #dcdcdc;
+    z-index: 999;
+    transition-duration: 0.4s;
+}
+
+.kz-event-card{
+    border-radius: 5px;
+}
+
+.kz-row-margin{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.card-img img{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.cardtitle{
+    font-weight: 999;
+    padding: 10px;
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+.cardcontent p{
+    text-align: justify;
+    color: black;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.transform{
+    box-shadow: 0px 0px 10px 5px #dcdcdc;
+    transition-duration: 0.4s;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: hue-rotate(50deg);
+}
+
+
+/* Event Cards end here */
