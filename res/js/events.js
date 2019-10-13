@@ -7,7 +7,7 @@ function hoverOut(){
 }
 
 function hoverContent2(){
-    $('#kz-card2 img').addClass("transform");
+    $('#kz-card2 .kz-img-pos').addClass("transform");
 }
 
 function hoverOut2(){
