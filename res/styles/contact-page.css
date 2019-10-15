@@ -3,7 +3,7 @@
     height: 60%;
     width: 55%;
     position: absolute;
-    top: 56%;
+    top: 61%;
     left: 45%;
     transform: translate(-50%,-50%);
     z-index: -1;
@@ -13,7 +13,6 @@
     padding-left:10%;
     padding-right: 20%;
     padding-top: 4%;
-    /* background: center; */
     
 }
 
