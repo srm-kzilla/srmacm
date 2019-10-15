@@ -17,12 +17,13 @@
     
 }
 
-.kz-title {
-    font-family: "Acumin";
+.kz-form-title {
+    font-family:  'Montserrat', sans-serif;
     color: #1C779C;
-    margin-top: 8%;
+    margin-top: 6%;
     padding-left:10%;
 }
+
 
 .kz-border {
     border: none;
@@ -144,11 +145,19 @@ color: #1C779C;
 
 
 .kz-locate-us{
-margin-top:8%;
+margin-top:6%;
 margin-bottom: ;
 }
 
-span{
+.kz-locate-title {
+    font-family:  'Montserrat', sans-serif;
+    color: #1C779C;
+}
+.kz-map{
+    margin-top: 4%;
+}
+
+/* span{
     color: var(--primary-color);
 }
 
@@ -159,11 +168,13 @@ span{
     height: 4px;
     background-color: var(--primary-color);
     margin-bottom: 5%;
-}
+} */
 
 .kz-location-img{
-    height: 200px;
-    width: 40%;
+    margin-top: 4%;
+    height: 125px;
+    width: 50%;
+
 }
 
 @media only screen and (max-width: 600px){
