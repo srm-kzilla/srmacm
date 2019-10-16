@@ -321,3 +321,110 @@ p{
 
 }
 
+/* ISHAN CHANGES FROM HERE... */
+.kz-ic-hero{
+    height: 80vh;
+    background: url("../img/bg.png");
+    background-position: top;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.kz-ic-hero h1{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    /* font-size: 50px; */
+    transform: translateY(-50%);
+}
+
+.kz-ic-hero img{
+    position: absolute;
+    height: 300px;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Navbar here*/
+
+.kz-links {
+    margin-left: 800px;
+}
+
+.kz-nav-item {
+    margin-right: 40px;
+    font-family: "Acumin";
+    position: relative;
+    display: inline-block;
+    z-index: 2;
+}
+
+.kz-nav-item::before {
+    transition: all 0.5s;
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 0;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.kz-nav-item:hover::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.kz-nav-item-active::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    height: 10%;
+    width: 35px;
+    background-color: #274afd;
+    z-index: -1;
+}
+
+.nav-logo {
+    height: 50px;
+    width: auto;
+    margin-left: 50px;
+}
+
+@media screen and (max-width: 800px) {
+    .kz-links {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 711px){
+    .kz-ic-hero img{
+        display: none;
+    }
+
+    .kz-ic-hero h1{
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+.kz-ic-hero h1{
+    font-size: 80px;
+    color: white;
+}
+
+.kz-acm-desc{
+    top: 10px;
+}
