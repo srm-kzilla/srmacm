@@ -125,7 +125,7 @@ p{
     color: black;
 }
 .kz-acm-desc h2{
-    margin-top: 150px;
+    margin-top: auto;
 }
 
 
@@ -196,20 +196,31 @@ p{
    }
 
 .kz-form{
+    background: url(../img/formbg1.jpg);
     padding-left: 200px;
     padding-right: 200px;
+    padding-top: 100px;
     margin-top: 100px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
+
+    border-radius: 50px;
 }
 .kz-form-logo{
+     display: none; 
     height: 150px;
     margin-left: 50%; 
     transform: translateX(-50%);
     margin-bottom:20px;
     
     
+}
+.kz-form h3{
+    margin-bottom: 50px;
+    color: black;
+    font-weight: 800;
 }
 
 .kz-hero{
@@ -409,17 +420,20 @@ p{
     }
   }
 
-  @media only screen and (max-width: 711px){
+  @media only screen and (max-width: 970px){
     .kz-ic-hero img{
-        display: none;
+        height: 200px;
     }
 
     .kz-ic-hero h1{
         top: 50%;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
     }
 }
+
+
+
 .kz-ic-hero h1{
     font-size: 80px;
     color: white;
@@ -427,4 +441,66 @@ p{
 
 .kz-acm-desc{
     top: 10px;
+}
+
+
+
+
+@media only screen and (max-width: 880px){
+    .kz-ic-hero img{
+        height: 200px;
+    }
+
+    .kz-ic-hero h1{
+        top: 50%;
+        left: 40%;
+        font-size: 60px;
+        
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 763px){
+    .kz-ic-hero img{
+        display: none;
+    }
+
+    .kz-ic-hero h1{
+        top: 50%;
+        left: 50%;
+        font-size: 100px;
+        
+        transform: translateX(-50%);
+        
+    }
+}
+
+@media only screen and (max-width: 619px){
+    .kz-ic-hero img{
+        display: none;
+    }
+
+    .kz-ic-hero h1{
+        top: 50%;
+        left: 50%;
+        font-size: 60px;
+        
+        transform: translateX(-50%);
+        
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .kz-ic-hero img{
+        display: none;
+    }
+
+    .kz-ic-hero h1{
+        top: 50%;
+        left: 50%;
+        font-size: 50px;
+        
+        transform: translateX(-50%);
+        
+    }
 }
