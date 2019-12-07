@@ -1,0 +1,205 @@
+/* //////CONTCACT FORM///////// */
+.bg-img{
+    height: 60%;
+    width: 55%;
+    position: absolute;
+    top: 61%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+}
+.kz-form {
+    position: relative;
+    padding-left:10%;
+    padding-right: 20%;
+    padding-top: 4%;
+    
+}
+
+.kz-form-title {
+    font-family:  'Montserrat', sans-serif;
+    color: #1C779C;
+    margin-top: 6%;
+    padding-left:10%;
+}
+
+
+.kz-border {
+    border: none;
+    border-bottom: 2px solid;
+}  
+
+.input-field {
+    position: relative;
+    margin-bottom: 6%;
+  }
+
+.input-message {
+position: relative;
+margin-bottom: 6%;
+}
+.input-field input{
+    background: transparent;
+}
+.input-message textarea{
+    background: inherit;
+}
+
+.input-field label {
+    position: absolute;
+    left: 4px;
+    transform: translateY(-50%);
+    z-index: -1;
+    top: 50%;
+    transition: all 0.2s ease-in-out;
+  }
+
+.input-field label.email {
+position: absolute;
+left: 4px;
+transform: translateY(-50%);
+z-index: -1;
+top: 30%;
+transition: all 0.2s ease-in-out;
+}
+
+.input-message label.message {
+position: absolute;
+left: 4px;
+transform: translateY(-50%);
+z-index: -1;
+top: 20%;
+transition: all 0.2s ease-in-out;
+}
+
+.input-field input:focus{
+outline: none !important;
+box-shadow: none;
+border-color: none;
+background: transparent;
+/* box-shadow: 0 0 10px 0  #1C779C; */
+}
+.input-message textarea:focus{
+outline: none !important;
+box-shadow: none;
+border-color: none;
+background: transparent;
+/* box-shadow: 0 0 10px 0  #1C779C; */
+}
+
+
+.input-field label.active {
+left: 2px;
+top: 0;
+font-size: 12px;
+color: #1C779C;
+}
+.input-message label.active {
+left: 2px;
+top: 0;
+font-size: 12px;
+color: #1C779C;
+}
+
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #274afd;
+    border-radius: 0.6em;
+    color: #274afd;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    /* margin: 20px; */
+    padding: 1em 2em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-top: 30px;
+}
+.btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+}
+.first {
+    border-color: #274afd;
+    color: #274afd;
+    background-image: linear-gradient(45deg, #274afd 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background 300ms ease-in-out;
+}
+.first:hover {
+    background-position: 0;
+}
+
+/* 
+/////////LOCATE US//////// */
+
+
+.kz-locate-us{
+margin-top:6%;
+margin-bottom: ;
+}
+
+.kz-locate-title {
+    font-family:  'Montserrat', sans-serif;
+    color: #1C779C;
+}
+.kz-map{
+    margin-top: 4%;
+}
+
+/* span{
+    color: var(--primary-color);
+}
+
+.kz-line{
+    margin-left: 50%;
+    transform:translate(-50%);
+    width: 10%;
+    height: 4px;
+    background-color: var(--primary-color);
+    margin-bottom: 5%;
+} */
+
+.kz-location-img{
+    margin-top: 4%;
+    height: 125px;
+    width: 50%;
+
+}
+
+@media only screen and (max-width: 600px){
+    .kz-location-img{
+        height: 150px;
+        width: 50%;
+    }
+}
+
+/* .kz-location-box{
+    margin-left: 8%;
+    background-color:white;
+    height: 500px;
+    width: 70%;
+    z-index: 1;
+}
+.fa-map-marker{
+    text-align: center;
+    color: var(--primary-color);
+    float: right;
+    margin-left: 32%;
+    margin-top:12%;
+}
+.kz-location{
+    text-align: center;
+    position: relative;
+    float: right;
+    top: 10%;
+} */
