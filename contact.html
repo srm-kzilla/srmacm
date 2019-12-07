@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SRMACM</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="res/styles/globals.css">
+    <link rel="stylesheet" href="res/styles/contact-page.css">
+	<link rel="stylesheet" type="text/css" href="res/styles/home-page.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3ac73696f2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+    <body>
+
+		<nav class="navbar navbar-expand-lg navbar-light bg-light kz-navbar">
+            <a class="navbar-brand" href="#"><img class="nav-logo" src="res/img/acm-icon.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse kz-links" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link kz-nav-item" href="home-page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kz-nav-item" href="events.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kz-nav-item" href="member-final.html">Membership</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link kz-nav-item" href="team.html">Team</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link kz-nav-item kz-nav-item-active" href="#">Contact<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+		
+        <div class="container-fluid">
+            <div class="row">
+                <!-- FORM COLUMN -->
+                <div class="col col-12 col-lg-6 ">
+                        <h2 class= "kz-form-title">Send us a message</h2>
+                        <div class="kz-form-bg">
+                                <img class="bg-img" src="res/img/form-bg.svg">
+                        </div>
+                        <form method="POST" action="https://formspree.io/srmacmstudents@gmail.com" class="kz-form">
+                            <div class="form-group input-field">
+                                <label>Your name</label>
+                                <input type="text" class="form-control kz-border" id="exampleInputName1" required>
+                            </div>
+                            <div class="form-group input-field">
+                              <label class="email">Email address</label>
+                              <input type="email" class="form-control kz-border" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group input-field">
+                                    <label>Phone</label>
+                                    <input type="number" class="form-control kz-border" id="exampleInputPhone1" required>
+                            </div>
+                            <div class="form-group input-message">
+                                    <label class="message">Your message</label>
+                                    <textarea name="message" type="text" class="form-control kz-border" id="exampleInputName1" rows="5" required></textarea>
+                            </div>
+                            <div class="form-group form-check">
+                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            </div>
+                            <button type="submit" class="btn first">Submit</button>
+                          </form>
+                </div>
+
+
+                <!-- LOCATE US COLUMN -->
+                <div class="col col-12 col-lg-6 text-center">
+
+                    <h2 class="kz-locate-us kz-locate-title">Locate Us</h2>
+
+                    <img class="kz-location-img" src="res/img/navigation.svg">
+
+                    <div class="kz-map"style="">
+                        <iframe width="70%" height="300" src="https://maps.google.com/maps?width=500&amp;height=300&amp;hl=en&amp;q=SRM%20+(ACM%20LOcation)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                        </iframe>
+                        <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
+                            <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="http://www.googlemapsgenerator.com/en/">Googlemapsgenerator.com/en/</a> & <a href="https://willoughby-pr.co.uk/">gmailbulkemail</a></small>
+                        </div>
+                        <style>#gmap_canvas img{max-width:none!important;background:none!important}</style>
+                    </div>
+                    <br/>
+                    
+                   
+
+                </div>
+            </div>
+        </div>
+
+
+    <!-- CONTACT-INPUT-LABEL-JS -->
+        <script>
+                var elems = $('.input-field');
+
+                for (var i = 0; i < elems.length; i++) {
+                // Wrapping in function...
+                (function () {
+                    var elem = elems[i];
+                    var label = elem.getElementsByTagName('label')[0];
+                    var input = elem.getElementsByTagName('input')[0];
+                  
+                    input.addEventListener("focusin", () => {
+                    label.classList.add("active");
+                    // console.log(label);
+                    });
+
+                    input.addEventListener("focusout", () => {
+
+                    if (input.value.length == 0) {
+                        label.classList.remove("active");
+                    }
+                    console.log(label);
+                    });
+                }
+                )();
+                }
+
+                var elems = $('.input-message');
+
+                for (var i = 0; i < elems.length; i++) {
+                // Wrapping in function...
+                (function () {
+                    var elem = elems[i];
+                    var label = elem.getElementsByTagName('label')[0];
+                    var text = elem.getElementsByTagName('textarea')[0];
+                  
+                    text.addEventListener("focusin", () => {
+                    label.classList.add("active");
+                    // console.log(label);
+                    });
+
+                    text.addEventListener("focusout", () => {
+
+                    if (text.value.length == 0) {
+                        label.classList.remove("active");
+                    }
+                    console.log(label);
+                    });
+                }
+                )();
+                }
+
+            </script>
+  
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+  </html>
