@@ -54,10 +54,6 @@ body {
 
 /* Navbar here*/
 
-.kz-links {
-    margin-left: 800px;
-}
-
 .kz-nav-item {
     margin-right: 40px;
     font-family: "Acumin";
@@ -111,7 +107,8 @@ body {
         margin-left: 0px;
         margin-top: 30px;
     }
-  }
+}
+
 /* Navbar End */
 
 /*About us section*/
@@ -121,7 +118,8 @@ body {
     margin-left: 0 !important;
 }
 
-.kz-about-us-title, .kz-heading {
+.kz-about-us-title,
+.kz-heading {
     /* font-family: "Acumin"; */
     font-family: 'Montserrat', sans-serif;
     font-size: 54px;
@@ -150,27 +148,32 @@ body {
     height: 300px;
     width: auto;
     z-index: 1;
-    
+
 }
+
 @media screen and (max-width: 800px) {
     .kz-about-us {
         margin-top: 500px;
     }
+
     .kz-about-us-title {
         margin-left: 30px;
         font-size: 40px;
     }
+
     .kz-about-us-description {
         margin: 0px 30px 0px 30px;
     }
+
     .kz-learn-more {
         margin-left: 30px !important;
     }
+
     .kz-about-us-img {
         height: 170px;
         margin-left: 0px;
     }
-  }
+}
 
 .btn {
     box-sizing: border-box;
@@ -194,10 +197,13 @@ body {
     font-weight: 700;
     margin-top: 30px;
 }
-.btn:hover, .btn:focus {
+
+.btn:hover,
+.btn:focus {
     color: #fff;
     outline: 0;
 }
+
 .first {
     border-color: #274afd;
     color: #274afd;
@@ -206,6 +212,7 @@ body {
     background-size: 400%;
     transition: background 300ms ease-in-out;
 }
+
 .first:hover {
     background-position: 0;
 }
@@ -213,27 +220,29 @@ body {
 /* About us ends here*/
 
 /*WHAT WE DO*/
-.kz-whatwedo-head{
+.kz-whatwedo-head {
     font-family: "Acumin";
-	margin-bottom: 24px;
-	letter-spacing: 0.5px;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
     font-weight: 300;
     margin-top: 100px;
     color: #fff;
 }
-.kz-section-head{
+
+.kz-section-head {
     font-family: "Acumin";
-	text-transform: uppercase;
-	margin-bottom: 24px;
-	letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    letter-spacing: 0.5px;
     font-weight: 300;
     margin-top: 50px;
     text-align: left;
 }
+
 .kz-section-container {
-    padding-block-start: 50px;  
-    position: relative; 
- 
+    padding-block-start: 50px;
+    position: relative;
+
 }
 
 .kz-section-text {
@@ -262,22 +271,23 @@ body {
         margin-left: 30px;
         font-size: 40px;
     }
-    
+
     .kz-section-text {
         padding: 0px 30px 0px 20px;
         font-size: 1rem;
     }
+
     .bg-pattern {
         height: 1000px;
         width: 1000px;
         margin-right: 500px;
     }
-    
-  }
 
-  /*what we do ends*/
+}
 
-  /*SIG Chapters*/
+/*what we do ends*/
+
+/*SIG Chapters*/
 
 .kz-chapters-logo {
     height: 50px;
@@ -291,17 +301,20 @@ body {
     .kz-chapters-logo {
         margin-left: 20px;
     }
+
     .kz-section-head {
         margin-left: 30px;
     }
+
     .kz-chapter-description {
         margin: 0px 30px 80px 30px;
 
     }
-  }
- /*SIG Chapters ends here*/
+}
 
- /** FOOTER **/
+/*SIG Chapters ends here*/
+
+/** FOOTER **/
 
 .kz-footer {
     position: relative;
@@ -330,9 +343,10 @@ body {
 }
 
 .kz-footer-left-upper h4 {
-    font-family: "Montserrat",sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 40px;
 }
+
 .kz-footer-left-upper,
 .kz-footer-left-social {
     margin-left: 80px;
@@ -373,7 +387,7 @@ body {
     margin-top: 20px;
     font-size: 30px;
     font-family: "Montserrat";
-    
+
 }
 
 .kz-footer-right-upper ul {
