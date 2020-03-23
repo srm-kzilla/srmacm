@@ -1,437 +1,436 @@
 @font-face {
-    font-family: "Acumin";
-    src: url("../../fonts/Acumin-BdPro.otf");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Acumin";
+  src: url("../../fonts/Acumin-BdPro.otf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "OpenSans";
-    src: url("../../fonts/OpenSans-Regular.ttf");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "OpenSans";
+  src: url("../../fonts/OpenSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-    --primary-color: #206AA4;
-    --secondary-color: #f7f5f5;
+  --primary-color: #206aa4;
+  --secondary-color: #f7f5f5;
 }
 
 .background {
-    width: 100%;
-    height: 80%;
+  width: 100%;
+  height: 80%;
 }
 
 .kz-hero-illustration {
-    position: absolute;
-    right: 100px;
-    top: 140px;
-    height: 480px;
+  position: absolute;
+  right: 100px;
+  top: 140px;
+  height: 480px;
 }
 
 .kz-hero-title {
-    position: absolute;
-    top: 280px;
-    left: 250px;
-    font-family: "Acumin";
-    font-size: 70px;
-    color: #fff;
+  position: absolute;
+  top: 280px;
+  left: 250px;
+  font-family: "Acumin";
+  font-size: 70px;
+  color: #fff;
 }
 
 .kz-hero-description {
-    position: absolute;
-    top: 360px;
-    left: 250px;
-    font-family: "OpenSans";
-    font-size: 20px;
-    color: #fff;
+  position: absolute;
+  top: 360px;
+  left: 250px;
+  font-family: "OpenSans";
+  font-size: 20px;
+  color: #fff;
 }
 
 /* Navbar here*/
 
 .kz-links {
-    margin-left: 800px;
+  margin-left: 800px;
 }
 
 .kz-nav-item {
-    margin-right: 40px;
-    font-family: "Acumin";
-    position: relative;
-    display: inline-block;
-    z-index: 2;
+  margin-right: 40px;
+  font-family: "Acumin";
+  position: relative;
+  display: inline-block;
+  z-index: 2;
 }
 
 .kz-nav-item::before {
-    transition: all 0.5s;
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 5px;
-    height: 10%;
-    width: 0;
-    background-color: #274afd;
-    z-index: -1;
+  transition: all 0.5s;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  height: 10%;
+  width: 0;
+  background-color: #274afd;
+  z-index: -1;
 }
 
 .kz-nav-item:hover::before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 5px;
-    height: 10%;
-    width: 35px;
-    background-color: #274afd;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  height: 10%;
+  width: 35px;
+  background-color: #274afd;
+  z-index: -1;
 }
 
 .kz-nav-item-active::before {
-    content: '';
-    position: absolute;
-    top: 35px;
-    left: 5px;
-    height: 10%;
-    width: 35px;
-    background-color: #274afd;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 5px;
+  height: 10%;
+  width: 35px;
+  background-color: #274afd;
+  z-index: -1;
 }
 
 .nav-logo {
-    height: 50px;
-    width: auto;
-    margin-left: 50px;
+  height: 50px;
+  width: auto;
+  margin-left: 50px;
 }
 
 @media screen and (max-width: 800px) {
-    .kz-links {
-        margin-left: 0px;
-        margin-top: 30px;
-    }
+  .kz-links {
+    margin-left: 0px;
+    margin-top: 30px;
   }
+}
 /* Navbar End */
 
 /*About us section*/
 
 .kz-about-us {
-    margin-top: 100px;
-    margin-left: 0 !important;
+  margin-top: 100px;
+  margin-left: 0 !important;
 }
 
-.kz-about-us-title, .kz-heading {
-    /* font-family: "Acumin"; */
-    font-family: 'Montserrat', sans-serif;
-    font-size: 54px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    margin-left: 200px;
+.kz-about-us-title,
+.kz-heading {
+  /* font-family: "Acumin"; */
+  font-family: "Montserrat", sans-serif;
+  font-size: 54px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 200px;
 }
 
 .kz-about-us-description {
-    font-family: "OpenSans";
+  font-family: "OpenSans";
 }
 
 .kz-learn-more {
-    font-family: "Acumin";
-    border: none;
-    background-color: #274afd;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 20px;
-    margin-top: 20px;
-    cursor: pointer;
+  font-family: "Acumin";
+  border: none;
+  background-color: #274afd;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .kz-about-us-img {
-    margin-left: 50px;
-    height: 300px;
-    width: auto;
-    z-index: 1;
-    
+  margin-left: 50px;
+  height: 300px;
+  width: auto;
+  z-index: 1;
 }
 @media screen and (max-width: 800px) {
-    .kz-about-us {
-        margin-top: 500px;
-    }
-    .kz-about-us-title {
-        margin-left: 30px;
-        font-size: 40px;
-    }
-    .kz-about-us-description {
-        margin: 0px 30px 0px 30px;
-    }
-    .kz-learn-more {
-        margin-left: 30px !important;
-    }
-    .kz-about-us-img {
-        height: 170px;
-        margin-left: 0px;
-    }
+  .kz-about-us {
+    margin-top: 500px;
   }
+  .kz-about-us-title {
+    margin-left: 30px;
+    font-size: 40px;
+  }
+  .kz-about-us-description {
+    margin: 0px 30px 0px 30px;
+  }
+  .kz-learn-more {
+    margin-left: 30px !important;
+  }
+  .kz-about-us-img {
+    height: 170px;
+    margin-left: 0px;
+  }
+}
 
 .btn {
-    box-sizing: border-box;
-    appearance: none;
-    background-color: transparent;
-    border: 2px solid #274afd;
-    border-radius: 0.6em;
-    color: #274afd;
-    cursor: pointer;
-    display: flex;
-    align-self: center;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1;
-    margin: 20px;
-    padding: 1em 2.2em;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    margin-top: 30px;
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #274afd;
+  border-radius: 0.6em;
+  color: #274afd;
+  cursor: pointer;
+  display: flex;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1em 2.2em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  margin-top: 30px;
 }
-.btn:hover, .btn:focus {
-    color: #fff;
-    outline: 0;
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
 }
 .first {
-    border-color: #274afd;
-    color: #274afd;
-    background-image: linear-gradient(45deg, #274afd 50%, transparent 50%);
-    background-position: 100%;
-    background-size: 400%;
-    transition: background 300ms ease-in-out;
+  border-color: #274afd;
+  color: #274afd;
+  background-image: linear-gradient(45deg, #274afd 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+  transition: background 300ms ease-in-out;
 }
 .first:hover {
-    background-position: 0;
+  background-position: 0;
 }
 
 /* About us ends here*/
 
 /*WHAT WE DO*/
-.kz-whatwedo-head{
-    font-family: "Acumin";
-	margin-bottom: 24px;
-	letter-spacing: 0.5px;
-    font-weight: 300;
-    margin-top: 100px;
-    color: #fff;
+.kz-whatwedo-head {
+  font-family: "Acumin";
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-top: 100px;
+  color: #fff;
 }
-.kz-section-head{
-    font-family: "Acumin";
-	text-transform: uppercase;
-	margin-bottom: 24px;
-	letter-spacing: 0.5px;
-    font-weight: 300;
-    margin-top: 50px;
-    text-align: left;
+.kz-section-head {
+  font-family: "Acumin";
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  margin-top: 50px;
+  text-align: left;
 }
 .kz-section-container {
-    padding-block-start: 50px;  
-    position: relative; 
- 
+  padding-block-start: 50px;
+  position: relative;
 }
 
 .kz-section-text {
-    font-family: "OpenSans";
-    font-size: 18px;
-    color: #fff;
-    padding-left: 200px;
-    padding-right: 200px;
+  font-family: "OpenSans";
+  font-size: 18px;
+  color: #fff;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 .kz-section-bg {
-    width: 100%;
+  width: 100%;
 }
 
 .bg-pattern {
-    position: absolute;
-    z-index: -1;
-    left: 0 !important;
-    height: 500px;
-    width: 100%;
-    margin-bottom: 100px !important;
+  position: absolute;
+  z-index: -1;
+  left: 0 !important;
+  height: 500px;
+  width: 100%;
+  margin-bottom: 100px !important;
 }
 
 @media screen and (max-width: 800px) {
-    .kz-whatwedo-head {
-        margin-left: 30px;
-        font-size: 40px;
-    }
-    
-    .kz-section-text {
-        padding: 0px 30px 0px 20px;
-        font-size: 1rem;
-    }
-    .bg-pattern {
-        height: 1000px;
-        width: 1000px;
-        margin-right: 500px;
-    }
-    
+  .kz-whatwedo-head {
+    margin-left: 30px;
+    font-size: 40px;
   }
 
-  /*what we do ends*/
+  .kz-section-text {
+    padding: 0px 30px 0px 20px;
+    font-size: 1rem;
+  }
+  .bg-pattern {
+    height: 1000px;
+    width: 1000px;
+    margin-right: 500px;
+  }
+}
 
-  /*SIG Chapters*/
+/*what we do ends*/
+
+/*SIG Chapters*/
 
 .kz-chapters-logo {
-    height: 50px;
+  height: 50px;
 }
 
 .kz-chapter-description {
-    text-align: left;
+  text-align: left;
 }
 
 @media screen and (max-width: 800px) {
-    .kz-chapters-logo {
-        margin-left: 20px;
-    }
-    .kz-section-head {
-        margin-left: 30px;
-    }
-    .kz-chapter-description {
-        margin: 0px 30px 80px 30px;
-
-    }
+  .kz-chapters-logo {
+    margin-left: 20px;
   }
- /*SIG Chapters ends here*/
+  .kz-section-head {
+    margin-left: 30px;
+  }
+  .kz-chapter-description {
+    margin: 0px 30px 80px 30px;
+  }
+}
+/*SIG Chapters ends here*/
 
- /** FOOTER **/
+/** FOOTER **/
 
 .kz-footer {
-    position: relative;
-    width: 100%;
-    padding: 0;
-    margin: 0px;
-    margin-top: 200px;
-    background-color: #274afd;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0px;
+  margin-top: 200px;
+  background-color: #274afd;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  -webkit-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56),
+    0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .kz-footer-parent {
-    width: 100%;
+  width: 100%;
 }
 
 .kz-footer-left-upper,
 .kz-footer-right-upper {
-    position: relative;
-    padding: 20px;
-    color: #fafafa;
+  position: relative;
+  padding: 20px;
+  color: #fafafa;
 }
 
 .kz-footer-left-upper h4 {
-    font-family: "Montserrat",sans-serif;
-    font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
 }
 .kz-footer-left-upper,
 .kz-footer-left-social {
-    margin-left: 80px;
+  margin-left: 80px;
 }
 
 .kz-footer-left-upper img {
-    height: 100px;
-    width: 100px;
-    margin: 20px 0px;
+  height: 100px;
+  width: 100px;
+  margin: 20px 0px;
 }
 
 .kz-footer-left-social ul {
-    padding: 20px;
-    list-style: none;
-    display: flex;
+  padding: 20px;
+  list-style: none;
+  display: flex;
 }
 
 .kz-footer-left-social li {
-    margin-right: 20px;
-    justify-content: space-evenly;
-    font-family: "OpenSans";
-    font-weight: 1;
+  margin-right: 20px;
+  justify-content: space-evenly;
+  font-family: "OpenSans";
+  font-weight: 1;
 }
 
 .kz-footer-left-social i {
-    font-size: 32px;
-    color: #fafafa;
+  font-size: 32px;
+  color: #fafafa;
 }
 
 .kz-footer-left-social i:hover {
-    font-size: 34px;
-    transform: rotate(30deg);
-    color: #000;
-    transition: 0.3s ease-in-out;
+  font-size: 34px;
+  transform: rotate(30deg);
+  color: #000;
+  transition: 0.3s ease-in-out;
 }
 
 .kz-footer-right-upper h4 {
-    margin-top: 20px;
-    font-size: 30px;
-    font-family: "Montserrat";
-    
+  margin-top: 20px;
+  font-size: 30px;
+  font-family: "Montserrat";
 }
 
 .kz-footer-right-upper ul {
-    list-style: none;
-    padding: 20px 0px;
+  list-style: none;
+  padding: 20px 0px;
 }
 
 .kz-footer-right-upper i {
-    color: #fafafa;
-    font-size: 18px;
-    padding: 10px 0px;
+  color: #fafafa;
+  font-size: 18px;
+  padding: 10px 0px;
 }
 
 .kz-footer-right-upper i:hover,
 .kz-footer-right-upper span:hover {
-    color: #000;
-    font-weight: 800;
+  color: #000;
+  font-weight: 800;
 }
 
 .kz-footer-right-upper span {
-    padding-left: 5px;
-    font-weight: 400;
-    font-family: 'OpenSans' !important;
+  padding-left: 5px;
+  font-weight: 400;
+  font-family: "OpenSans" !important;
 }
 
 .kz-footer-right-lower {
-    padding: 20px;
-    color: #fafafa;
+  padding: 20px;
+  color: #fafafa;
 }
 
 .kz-footer-right-lower h3 {
-    font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .kz-footer-right-lower ul {
-    list-style: none;
-    padding: 0px;
-    justify-content: flex-start;
-    display: flex;
+  list-style: none;
+  padding: 0px;
+  justify-content: flex-start;
+  display: flex;
 }
 
 .kz-footer-right-lower li {
-    padding-right: 10px;
-    color: #fafafa;
-    font-family: "OpenSans";
+  padding-right: 10px;
+  color: #fafafa;
+  font-family: "OpenSans";
 }
 
 .kz-footer-right-lower a {
-    color: #fafafa;
-    font-size: 18px;
-    text-decoration: none;
+  color: #fafafa;
+  font-size: 18px;
+  text-decoration: none;
 }
 
 .kz-footer-right-lower a:hover {
-    outline: none;
-    border-bottom: 2px dashed #fafafa;
+  outline: none;
+  border-bottom: 2px dashed #fafafa;
 }
-
 
 /** FOOTER ENDS **/
