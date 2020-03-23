@@ -234,6 +234,7 @@ body {
 .kz-section-container {
   padding-block-start: 50px;
   position: relative;
+  padding: -50px;
 }
 
 .kz-section-text {
