@@ -14,10 +14,10 @@
   content: "";
   width: 110px;
   height: 4px;
-  background-image: linear-gradient(to left,#1c779c,#31f5ff);
+  background-image: linear-gradient(to left, #1c779c, #31f5ff);
   display: block;
   margin: 10px auto 0 auto;
-  
+
 }
 
 .profile-card {
@@ -29,7 +29,7 @@
 .profile-card .profile-card_cover {
   height: 130px;
   overflow: hidden;
-  background-image: linear-gradient(to left,#1c779c,#7df9ff);
+  background-image: linear-gradient(to left, #1c779c, #7df9ff);
 }
 
 .profile-card .profile-card_padding {
@@ -42,11 +42,17 @@
   width: 125px;
   height: 125px;
   border-radius: 125px;
-  overflow: hidden;
   border: 4px solid #fff;
   margin: 0 auto 15px auto;
-  
+
 }
+
+.profile-card_image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 125px;
+}
+
 
 .profile-card .profile-card_details h3 {
   font-size: 21px;
